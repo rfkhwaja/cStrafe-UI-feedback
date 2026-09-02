@@ -1,6 +1,10 @@
-# cStrafe UI by CS2Kitchen
+# cStrafe UI forked from CS2Kithchen
+# WIP
 
-This is the second project in this domain. I made this so it could be more simplified and not too confusing like the previous version.This is a lightweight training tool to help players practice  counterstrafing mechanics in CS2. It listens to your movement keys (W, A, S and D) and the left mouse button to decide whether you fired while coming to a full stop, started moving the other way or were still overlapping directions.
+This is a lightweight training tool to help players practice  counterstrafing mechanics in CS2. It listens to your movement keys (W, A, S and D) and the left mouse button to decide whether you fired while coming to a full stop, started moving the other way or were still overlapping directions. Most of the original code is from CS2Kitchen.
+
+The goal of this fork is to add separate viewable timers for counter-strafe timings and post strafe shot timings and to use audio synthesis to provide immediate feedback on if the strafe or the shot was delayed, by how much, and if it was early or late.
+
 
 ![UI Preview](images/strafe_ui_2.gif)
 
@@ -16,7 +20,12 @@ This is the second project in this domain. I made this so it could be more simpl
 
    The Tkinter library (`tkinter`) is included with most standard Python installations on Windows and macOS.
 
-3. Download or clone this repository, then run the program from the project directory:
+   If that doesn't work, try
+   ```bash
+   pip install pynput Tk 
+   ```
+
+4. Download or clone this repository, then run the program from the project directory:
 
    ```bash
    python main.py
